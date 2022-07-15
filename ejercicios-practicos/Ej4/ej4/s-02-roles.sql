@@ -1,0 +1,10 @@
+connect sys/system1 as sysdba
+
+CREATE TABLE angel0104.t02_db_roles AS
+SELECT ROLE_ID, ROLE
+FROM DBA_ROLES;
+
+CREATE TABLE angel0104.t03_dba_privs AS
+SELECT PRIVILEGE
+FROM DBA_SYS_PRIVS
+WHERE grantee='DBA';

@@ -1,0 +1,735 @@
+2022-03-06T17:31:21.966300-06:00
+Starting ORACLE instance (normal) (OS id: 2629)
+2022-03-06T17:31:22.005901-06:00
+****************************************************
+ /dev/shm will be used for creating SGA 
+Large pages will not be used. Only standard 4K pages will be used 
+****************************************************
+2022-03-06T17:31:22.023068-06:00
+**********************************************************************
+2022-03-06T17:31:22.023153-06:00
+Dump of system resources acquired for SHARED GLOBAL AREA (SGA) 
+
+2022-03-06T17:31:22.023417-06:00
+ Per process system memlock (soft) limit = 64K
+2022-03-06T17:31:22.023498-06:00
+ Expected per process system memlock (soft) limit to lock
+ instance MAX SHARED GLOBAL AREA (SGA) into memory: 768M
+2022-03-06T17:31:22.023651-06:00
+ Available system pagesizes:
+  4K, 2048K 
+2022-03-06T17:31:22.023799-06:00
+ Supported system pagesize(s):
+2022-03-06T17:31:22.023875-06:00
+  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+2022-03-06T17:31:22.023953-06:00
+        4K       Configured          196613          196613        NONE
+2022-03-06T17:31:22.024028-06:00
+ Reason for not supporting certain system pagesizes: 
+2022-03-06T17:31:22.024164-06:00
+  2048K - Dynamic allocate and free memory regions
+2022-03-06T17:31:22.024289-06:00
+RECOMMENDATION:
+2022-03-06T17:31:22.024369-06:00
+ 1. Increase per process memlock (soft) limit to at least 768MB
+ to lock 100% of SHARED GLOBAL AREA (SGA) pages into physical memory
+2022-03-06T17:31:22.024519-06:00
+**********************************************************************
+2022-03-06T17:31:27.530969-06:00
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+2022-03-06T17:31:27.575515-06:00
+Initial number of CPU is 2
+Number of processor cores in the system is 2
+Number of processor sockets in the system is 1
+Shared memory segment for instance monitoring created
+Capability Type : Network 
+capabilities requested : 7 detected : 0 Simulated : 0
+Capability Type : Runtime Environment 
+capabilities requested : 400000FF detected : 40000000 Simulated : 0
+Capability Type : Engineered Systems 
+capabilities requested : 7 detected : 0 Simulated : 0
+Capability Type : Database Test 
+capabilities requested : 3 detected : 0 Simulated : 0
+Using LOG_ARCHIVE_DEST_1 parameter default value as /u01/app/oracle/product/19.3.0/dbhome_1/dbs/arch
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =35
+LICENSE_MAX_USERS = 0
+SYS auditing is enabled
+NOTE: remote asm mode is local (mode 0x1; from cluster type)
+2022-03-06T17:31:41.658685-06:00
+NOTE: Using default ASM root directory ASM
+NOTE: remote asm mode is local (mode 0x1; from cluster type)
+NOTE: Cluster configuration type = NONE [2]
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0.
+ORACLE_HOME:    /u01/app/oracle/product/19.3.0/dbhome_1
+System name:	Linux
+Node name:	pc-sahl.fi.unam
+Release:	5.4.17-2136.302.7.2.2.el8uek.x86_64
+Version:	#2 SMP Fri Jan 28 20:03:52 PST 2022
+Machine:	x86_64
+Using parameter settings in server-side spfile /u01/app/oracle/product/19.3.0/dbhome_1/dbs/spfilesahlbda2.ora
+System parameters with non-default values:
+  memory_target            = 768M
+  control_files            = "/unam-bda/d01/app/oracle/oradata/SAHLBDA2/control01.ctl"
+  control_files            = "/unam-bda/d02/app/oracle/oradata/SAHLBDA2/control02.ctl"
+  control_files            = "/unam-bda/d03/app/oracle/oradata/SAHLBDA2/control03.ctl"
+  db_name                  = "sahlbda2"
+2022-03-06T17:31:42.264076-06:00
+============================================================
+NOTE: PatchLevel of this instance 0
+============================================================
+2022-03-06T17:31:46.424622-06:00
+Starting background process PMON
+2022-03-06T17:31:46.478462-06:00
+PMON started with pid=2, OS id=2635 
+Starting background process CLMN
+2022-03-06T17:31:46.535032-06:00
+CLMN started with pid=3, OS id=2637 
+Starting background process PSP0
+2022-03-06T17:31:46.607781-06:00
+PSP0 started with pid=4, OS id=2639 
+Starting background process VKTM
+2022-03-06T17:31:47.728072-06:00
+VKTM started with pid=5, OS id=2641 at elevated (RT) priority
+2022-03-06T17:31:47.728099-06:00
+Starting background process GEN0
+2022-03-06T17:31:47.734776-06:00
+VKTM running at (1)millisec precision with DBRM quantum (100)ms
+2022-03-06T17:31:47.802063-06:00
+GEN0 started with pid=6, OS id=2645 
+Starting background process MMAN
+2022-03-06T17:31:47.892913-06:00
+MMAN started with pid=7, OS id=2647 
+Starting background process GEN1
+2022-03-06T17:31:48.795830-06:00
+Starting background process DIAG
+2022-03-06T17:31:48.795600-06:00
+GEN1 started with pid=9, OS id=2651_2652 
+2022-03-06T17:31:48.869015-06:00
+DIAG started with pid=8, OS id=2654 
+Starting background process OFSD
+2022-03-06T17:31:48.980305-06:00
+OFSD started with pid=11, OS id=2656_2657 
+2022-03-06T17:31:48.984928-06:00
+Oracle running with ofslib:'Oracle File Server Library' version=2
+Starting background process DBRM
+2022-03-06T17:31:49.065098-06:00
+DBRM started with pid=13, OS id=2659 
+Starting background process VKRM
+2022-03-06T17:31:49.153569-06:00
+VKRM started with pid=14, OS id=2661 
+Starting background process SVCB
+2022-03-06T17:31:49.238367-06:00
+SVCB started with pid=15, OS id=2663 
+Starting background process PMAN
+2022-03-06T17:31:49.324203-06:00
+PMAN started with pid=16, OS id=2665 
+Starting background process DIA0
+Starting background process DBW0
+2022-03-06T17:31:49.405819-06:00
+DIA0 started with pid=17, OS id=2667 
+2022-03-06T17:31:49.548401-06:00
+DBW0 started with pid=18, OS id=2669 
+Starting background process LGWR
+2022-03-06T17:31:49.646510-06:00
+LGWR started with pid=19, OS id=2671 
+Starting background process CKPT
+2022-03-06T17:31:49.750635-06:00
+CKPT started with pid=20, OS id=2673 
+2022-03-06T17:31:49.824962-06:00
+LGWR slave LG00 created with pid=21, OS pid=2675
+2022-03-06T17:31:49.824864-06:00
+Starting background process SMON
+2022-03-06T17:31:49.887113-06:00
+SMON started with pid=22, OS id=2677 
+LGWR slave LG01 created with pid=23, OS pid=2679
+Starting background process SMCO
+2022-03-06T17:31:50.020181-06:00
+SMCO started with pid=24, OS id=2681 
+Starting background process RECO
+2022-03-06T17:31:50.086034-06:00
+RECO started with pid=25, OS id=2683 
+Starting background process LREG
+2022-03-06T17:31:50.211460-06:00
+LREG started with pid=27, OS id=2687 
+Starting background process PXMN
+2022-03-06T17:31:50.347727-06:00
+PXMN started with pid=29, OS id=2691 
+Starting background process FENC
+Starting background process MMON
+2022-03-06T17:31:50.429033-06:00
+FENC started with pid=30, OS id=2693 
+2022-03-06T17:31:50.506578-06:00
+MMON started with pid=31, OS id=2695 
+Starting background process MMNL
+2022-03-06T17:31:50.585456-06:00
+MMNL started with pid=32, OS id=2697 
+Starting background process TMON
+2022-03-06T17:31:50.646279-06:00
+TMON started with pid=30, OS id=2699 
+2022-03-06T17:31:50.653597-06:00
+Setting CPU count to 2
+ORACLE_BASE from environment = /u01/app/oracle
+Spfile /u01/app/oracle/product/19.3.0/dbhome_1/dbs/spfilesahlbda2.ora is in old pre-11 format and compatible >= 11.0.0; converting to new H.A.R.D. compliant format.
+2022-03-06T17:31:52.114609-06:00
+Using default pga_aggregate_limit of 2048 MB
+2022-03-06T17:35:21.782974-06:00
+ERROR: Shared memory area is accessible to instance startup process
+ prior to instance startup operation.
+create database sahlbda2
+user sys identified by 
+user system identified by 
+logfile group 1 (
+  '/unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo01a.log',
+  '/unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo01b.log',
+  '/unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo01c.log') size 50m blocksize 512,
+group 2 (
+  '/unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo02a.log',
+  '/unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo02b.log',
+  '/unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo02c.log') size 50m blocksize 512,
+group 3 (
+  '/unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo03a.log',
+  '/unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo03b.log',
+  '/unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo03c.log') size 50m blocksize 512
+maxloghistory 1
+maxlogfiles 16
+maxlogmembers 3
+maxdatafiles 1024
+character set AL32UTF8
+national character set AL16UTF16
+extent management local
+datafile '/u01/app/oracle/oradata/SAHLBDA2/system01.dbf'
+  size 700m reuse autoextend on next 10240k maxsize unlimited
+sysaux datafile '/u01/app/oracle/oradata/SAHLBDA2/sysaux01.dbf'
+  size 550m reuse autoextend on next 10240k maxsize unlimited
+default tablespace users
+  datafile '/u01/app/oracle/oradata/SAHLBDA2/users01.dbf'
+  size 500m reuse autoextend on maxsize unlimited
+default temporary tablespace tempts1
+  tempfile '/u01/app/oracle/oradata/SAHLBDA2/temp01.dbf'
+  size 20m reuse autoextend on next 640k maxsize unlimited
+undo tablespace undotbs1
+  datafile '/u01/app/oracle/oradata/SAHLBDA2/undotbs01.dbf'
+  size 200m reuse autoextend on next 5120k maxsize unlimited
+2022-03-06T17:35:26.498262-06:00
+Expanded controlfile section 32 from 31 to 128 records
+Requested to grow by 97 records; added 3 blocks of records
+.... (PID:2728): Redo network throttle feature is disabled at mount time
+2022-03-06T17:35:26.800877-06:00
+Database mounted in Exclusive Mode
+Lost write protection disabled
+.... (PID:2728): Using STANDBY_ARCHIVE_DEST parameter default value as /u01/app/oracle/product/19.3.0/dbhome_1/dbs/arch [krsd.c:18141]
+2022-03-06T17:35:47.483122-06:00
+Successful mount of redo thread 1, with mount id 2401167066
+2022-03-06T17:35:47.488744-06:00
+Ping without log force is disabled:
+  instance mounted in exclusive mode.
+Buffer Cache Full DB Caching mode changing from FULL CACHING DISABLED to FULL CACHING ENABLED 
+Database SCN compatibility initialized to 3
+2022-03-06T17:35:48.001168-06:00
+Assigning activation ID 2401167066 (0x8f1ee6da)
+2022-03-06T17:35:48.101169-06:00
+TT00 (PID:2782): Gap Manager starting
+2022-03-06T17:35:48.667905-06:00
+Redo log for group 1, sequence 1 is not located on DAX storage
+Thread 1 opened at log sequence 1
+  Current log# 1 seq# 1 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo01a.log
+  Current log# 1 seq# 1 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo01b.log
+  Current log# 1 seq# 1 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo01c.log
+Successful open of redo thread 1
+2022-03-06T17:35:49.130848-06:00
+MTTR advisory is disabled because FAST_START_MTTR_TARGET is not set
+stopping change tracking
+processing ?/rdbms/admin/dcore.bsq
+create tablespace SYSTEM datafile  '/u01/app/oracle/oradata/SAHLBDA2/system01.dbf'
+  size 700m reuse autoextend on next 10240k maxsize unlimited
+
+  EXTENT MANAGEMENT LOCAL online
+2022-03-06T17:35:54.570536-06:00
+Warning: VKTM detected a forward time drift. 
+Please see the VKTM trace file for more details:
+/u01/app/oracle/diag/rdbms/sahlbda2/sahlbda2/trace/sahlbda2_vktm_2641.trc
+2022-03-06T17:36:11.023613-06:00
+Endian type of dictionary set to little
+2022-03-06T17:36:19.426435-06:00
+Completed: create tablespace SYSTEM datafile  '/u01/app/oracle/oradata/SAHLBDA2/system01.dbf'
+  size 700m reuse autoextend on next 10240k maxsize unlimited
+
+  EXTENT MANAGEMENT LOCAL online
+create rollback segment SYSTEM tablespace SYSTEM
+  storage (initial 50K next 50K)
+Completed: create rollback segment SYSTEM tablespace SYSTEM
+  storage (initial 50K next 50K)
+2022-03-06T17:36:19.867049-06:00
+Undo initialization recovery: err:0 start: 1210011 end: 1210014 diff: 3 ms (0.0 seconds)
+Undo initialization online undo segments: err:0 start: 1210017 end: 1210017 diff: 0 ms (0.0 seconds)
+Caching undo dictionary info: used hint for object index=0 
+Caching undo dictionary info: used hint for object index=1 
+Caching undo dictionary info: used hint for object index=2 
+Caching undo dictionary info: used hint for object index=3 
+Caching undo dictionary info: used hint for object index=4 
+Undo initialization finished serial:0 start:1210011 end:1210020 diff:9 ms (0.0 seconds)
+2022-03-06T17:36:21.913328-06:00
+Buffer Cache Full DB Caching mode changing from FULL CACHING ENABLED to FULL CACHING DISABLED 
+Full DB Caching disabled: DEFAULT_CACHE_SIZE should be at least 433 MBs bigger than current size. 
+2022-03-06T17:36:23.702756-06:00
+alter tablespace system force logging
+Completed: alter tablespace system force logging
+2022-03-06T17:36:24.315596-06:00
+processing ?/rdbms/admin/dsqlddl.bsq
+2022-03-06T17:36:24.883716-06:00
+processing ?/rdbms/admin/dmanage.bsq
+CREATE TABLESPACE sysaux DATAFILE  '/u01/app/oracle/oradata/SAHLBDA2/sysaux01.dbf'
+  size 550m reuse autoextend on next 10240k maxsize unlimited
+
+  EXTENT MANAGEMENT LOCAL SEGMENT SPACE MANAGEMENT AUTO ONLINE FORCE LOGGING
+2022-03-06T17:36:51.250382-06:00
+Completed: CREATE TABLESPACE sysaux DATAFILE  '/u01/app/oracle/oradata/SAHLBDA2/sysaux01.dbf'
+  size 550m reuse autoextend on next 10240k maxsize unlimited
+
+  EXTENT MANAGEMENT LOCAL SEGMENT SPACE MANAGEMENT AUTO ONLINE FORCE LOGGING
+alter tablespace system default compress for all operations
+Completed: alter tablespace system default compress for all operations
+alter tablespace sysaux default compress for all operations
+Completed: alter tablespace sysaux default compress for all operations
+2022-03-06T17:36:51.490354-06:00
+processing ?/rdbms/admin/dplsql.bsq
+processing ?/rdbms/admin/dtxnspc.bsq
+CREATE UNDO TABLESPACE UNDOTBS1 DATAFILE  '/u01/app/oracle/oradata/SAHLBDA2/undotbs01.dbf'
+  size 200m reuse autoextend on next 5120k maxsize unlimited
+2022-03-06T17:37:01.548354-06:00
+[2728] Successfully onlined Undo Tablespace 2.
+Completed: CREATE UNDO TABLESPACE UNDOTBS1 DATAFILE  '/u01/app/oracle/oradata/SAHLBDA2/undotbs01.dbf'
+  size 200m reuse autoextend on next 5120k maxsize unlimited
+CREATE TEMPORARY TABLESPACE "TEMPTS1" TEMPFILE  '/u01/app/oracle/oradata/SAHLBDA2/temp01.dbf'
+  size 20m reuse autoextend on next 640k maxsize unlimited
+
+Completed: CREATE TEMPORARY TABLESPACE "TEMPTS1" TEMPFILE  '/u01/app/oracle/oradata/SAHLBDA2/temp01.dbf'
+  size 20m reuse autoextend on next 640k maxsize unlimited
+
+ALTER DATABASE DEFAULT TEMPORARY TABLESPACE "TEMPTS1"
+Completed: ALTER DATABASE DEFAULT TEMPORARY TABLESPACE "TEMPTS1"
+CREATE  TABLESPACE "USERS" DATAFILE  '/u01/app/oracle/oradata/SAHLBDA2/users01.dbf'
+  size 500m reuse autoextend on maxsize unlimited
+ SEGMENT SPACE MANAGEMENT AUTO
+2022-03-06T17:37:21.662919-06:00
+Completed: CREATE  TABLESPACE "USERS" DATAFILE  '/u01/app/oracle/oradata/SAHLBDA2/users01.dbf'
+  size 500m reuse autoextend on maxsize unlimited
+ SEGMENT SPACE MANAGEMENT AUTO
+ALTER DATABASE DEFAULT TABLESPACE "USERS"
+Completed: ALTER DATABASE DEFAULT TABLESPACE "USERS"
+2022-03-06T17:37:21.772696-06:00
+processing ?/rdbms/admin/dfmap.bsq
+processing ?/rdbms/admin/denv.bsq
+processing ?/rdbms/admin/drac.bsq
+processing ?/rdbms/admin/dsec.bsq
+2022-03-06T17:37:25.184528-06:00
+processing ?/rdbms/admin/doptim.bsq
+processing ?/rdbms/admin/dobj.bsq
+2022-03-06T17:37:26.618921-06:00
+processing ?/rdbms/admin/djava.bsq
+processing ?/rdbms/admin/dpart.bsq
+processing ?/rdbms/admin/drep.bsq
+2022-03-06T17:37:29.317904-06:00
+processing ?/rdbms/admin/daw.bsq
+processing ?/rdbms/admin/dsummgt.bsq
+2022-03-06T17:37:30.596263-06:00
+processing ?/rdbms/admin/dtools.bsq
+processing ?/rdbms/admin/dexttab.bsq
+processing ?/rdbms/admin/ddm.bsq
+2022-03-06T17:37:31.622447-06:00
+processing ?/rdbms/admin/dlmnr.bsq
+2022-03-06T17:37:32.679277-06:00
+processing ?/rdbms/admin/ddst.bsq
+2022-03-06T17:37:34.219641-06:00
+processing ?/rdbms/admin/dfba.bsq
+processing ?/rdbms/admin/dpstdy.bsq
+processing ?/rdbms/admin/drupg.bsq
+processing ?/rdbms/admin/dtlog.bsq
+processing ?/rdbms/admin/dmisc.bsq
+processing ?/rdbms/admin/dhcs.bsq
+2022-03-06T17:37:51.988222-06:00
+Successfully created internal service SYS$BACKGROUND at open
+Successfully created internal service SYS$USERS at open
+joxcsys_required_dirobj_exists: directory object does not exist, pid 2728 cid 0
+joxcsys_ensure_directory_object: created directory object with path /u01/app/oracle/product/19.3.0/dbhome_1/javavm/admin/, pid 2728 cid 0
+replication_dependency_tracking turned off (no async multimaster replication found)
+Completed: create database sahlbda2
+user sys identified by 
+user system identified by 
+logfile group 1 (
+  '/unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo01a.log',
+  '/unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo01b.log',
+  '/unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo01c.log') size 50m blocksize 512,
+group 2 (
+  '/unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo02a.log',
+  '/unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo02b.log',
+  '/unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo02c.log') size 50m blocksize 512,
+group 3 (
+  '/unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo03a.log',
+  '/unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo03b.log',
+  '/unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo03c.log') size 50m blocksize 512
+maxloghistory 1
+maxlogfiles 16
+maxlogmembers 3
+maxdatafiles 1024
+character set AL32UTF8
+national character set AL16UTF16
+extent management local
+datafile '/u01/app/oracle/oradata/SAHLBDA2/system01.dbf'
+  size 700m reuse autoextend on next 10240k maxsize unlimited
+sysaux datafile '/u01/app/oracle/oradata/SAHLBDA2/sysaux01.dbf'
+  size 550m reuse autoextend on next 10240k maxsize unlimited
+default tablespace users
+  datafile '/u01/app/oracle/oradata/SAHLBDA2/users01.dbf'
+  size 500m reuse autoextend on maxsize unlimited
+default temporary tablespace tempts1
+  tempfile '/u01/app/oracle/oradata/SAHLBDA2/temp01.dbf'
+  size 20m reuse autoextend on next 640k maxsize unlimited
+undo tablespace undotbs1
+  datafile '/u01/app/oracle/oradata/SAHLBDA2/undotbs01.dbf'
+  size 200m reuse autoextend on next 5120k maxsize unlimited
+2022-03-06T17:48:14.560239-06:00
+Thread 1 advanced to log sequence 2 (LGWR switch)
+  Current log# 2 seq# 2 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo02a.log
+  Current log# 2 seq# 2 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo02b.log
+  Current log# 2 seq# 2 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo02c.log
+2022-03-06T17:52:46.134337-06:00
+Thread 1 advanced to log sequence 3 (LGWR switch)
+  Current log# 3 seq# 3 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo03a.log
+  Current log# 3 seq# 3 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo03b.log
+  Current log# 3 seq# 3 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo03c.log
+2022-03-06T17:57:11.190130-06:00
+Thread 1 advanced to log sequence 4 (LGWR switch)
+  Current log# 1 seq# 4 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo01a.log
+  Current log# 1 seq# 4 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo01b.log
+  Current log# 1 seq# 4 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo01c.log
+2022-03-06T18:02:27.062108-06:00
+Thread 1 advanced to log sequence 5 (LGWR switch)
+  Current log# 2 seq# 5 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo02a.log
+  Current log# 2 seq# 5 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo02b.log
+  Current log# 2 seq# 5 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo02c.log
+2022-03-06T18:05:04.353401-06:00
+Thread 1 advanced to log sequence 6 (LGWR switch)
+  Current log# 3 seq# 6 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo03a.log
+  Current log# 3 seq# 6 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo03b.log
+  Current log# 3 seq# 6 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo03c.log
+2022-03-06T18:07:26.670773-06:00
+Thread 1 cannot allocate new log, sequence 7
+Checkpoint not complete
+  Current log# 3 seq# 6 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo03a.log
+  Current log# 3 seq# 6 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo03b.log
+  Current log# 3 seq# 6 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo03c.log
+2022-03-06T18:07:30.061817-06:00
+Thread 1 advanced to log sequence 7 (LGWR switch)
+  Current log# 1 seq# 7 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo01a.log
+  Current log# 1 seq# 7 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo01b.log
+  Current log# 1 seq# 7 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo01c.log
+2022-03-06T18:09:22.410498-06:00
+Thread 1 cannot allocate new log, sequence 8
+Checkpoint not complete
+  Current log# 1 seq# 7 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo01a.log
+  Current log# 1 seq# 7 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo01b.log
+  Current log# 1 seq# 7 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo01c.log
+2022-03-06T18:09:25.873920-06:00
+Thread 1 advanced to log sequence 8 (LGWR switch)
+  Current log# 2 seq# 8 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo02a.log
+  Current log# 2 seq# 8 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo02b.log
+  Current log# 2 seq# 8 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo02c.log
+2022-03-06T18:09:28.512103-06:00
+Create Relation IPS_PACKAGE_UNPACK_HISTORY
+2022-03-06T18:11:42.049461-06:00
+Thread 1 cannot allocate new log, sequence 9
+Checkpoint not complete
+  Current log# 2 seq# 8 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo02a.log
+  Current log# 2 seq# 8 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo02b.log
+  Current log# 2 seq# 8 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo02c.log
+2022-03-06T18:11:48.449519-06:00
+Thread 1 advanced to log sequence 9 (LGWR switch)
+  Current log# 3 seq# 9 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo03a.log
+  Current log# 3 seq# 9 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo03b.log
+  Current log# 3 seq# 9 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo03c.log
+2022-03-06T18:14:20.265531-06:00
+Thread 1 cannot allocate new log, sequence 10
+Checkpoint not complete
+  Current log# 3 seq# 9 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo03a.log
+  Current log# 3 seq# 9 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo03b.log
+  Current log# 3 seq# 9 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo03c.log
+2022-03-06T18:14:23.691136-06:00
+Thread 1 advanced to log sequence 10 (LGWR switch)
+  Current log# 1 seq# 10 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo01a.log
+  Current log# 1 seq# 10 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo01b.log
+  Current log# 1 seq# 10 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo01c.log
+2022-03-06T18:16:12.861552-06:00
+Thread 1 cannot allocate new log, sequence 11
+Checkpoint not complete
+  Current log# 1 seq# 10 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo01a.log
+  Current log# 1 seq# 10 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo01b.log
+  Current log# 1 seq# 10 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo01c.log
+2022-03-06T18:16:16.236091-06:00
+Thread 1 advanced to log sequence 11 (LGWR switch)
+  Current log# 2 seq# 11 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo02a.log
+  Current log# 2 seq# 11 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo02b.log
+  Current log# 2 seq# 11 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo02c.log
+2022-03-06T18:18:40.442323-06:00
+Thread 1 cannot allocate new log, sequence 12
+Checkpoint not complete
+  Current log# 2 seq# 11 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo02a.log
+  Current log# 2 seq# 11 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo02b.log
+  Current log# 2 seq# 11 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo02c.log
+2022-03-06T18:18:46.824290-06:00
+Thread 1 advanced to log sequence 12 (LGWR switch)
+  Current log# 3 seq# 12 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo03a.log
+  Current log# 3 seq# 12 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo03b.log
+  Current log# 3 seq# 12 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo03c.log
+2022-03-06T18:19:47.537658-06:00
+Thread 1 cannot allocate new log, sequence 13
+Checkpoint not complete
+  Current log# 3 seq# 12 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo03a.log
+  Current log# 3 seq# 12 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo03b.log
+  Current log# 3 seq# 12 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo03c.log
+2022-03-06T18:19:53.211899-06:00
+Thread 1 advanced to log sequence 13 (LGWR switch)
+  Current log# 1 seq# 13 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo01a.log
+  Current log# 1 seq# 13 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo01b.log
+  Current log# 1 seq# 13 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo01c.log
+2022-03-06T18:21:12.401043-06:00
+Thread 1 advanced to log sequence 14 (LGWR switch)
+  Current log# 2 seq# 14 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo02a.log
+  Current log# 2 seq# 14 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo02b.log
+  Current log# 2 seq# 14 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo02c.log
+2022-03-06T18:23:09.932911-06:00
+Thread 1 cannot allocate new log, sequence 15
+Checkpoint not complete
+  Current log# 2 seq# 14 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo02a.log
+  Current log# 2 seq# 14 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo02b.log
+  Current log# 2 seq# 14 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo02c.log
+2022-03-06T18:23:13.354013-06:00
+Thread 1 advanced to log sequence 15 (LGWR switch)
+  Current log# 3 seq# 15 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo03a.log
+  Current log# 3 seq# 15 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo03b.log
+  Current log# 3 seq# 15 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo03c.log
+2022-03-06T18:27:31.381111-06:00
+Thread 1 cannot allocate new log, sequence 16
+Checkpoint not complete
+  Current log# 3 seq# 15 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo03a.log
+  Current log# 3 seq# 15 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo03b.log
+  Current log# 3 seq# 15 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo03c.log
+2022-03-06T18:27:37.856911-06:00
+Thread 1 advanced to log sequence 16 (LGWR switch)
+  Current log# 1 seq# 16 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo01a.log
+  Current log# 1 seq# 16 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo01b.log
+  Current log# 1 seq# 16 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo01c.log
+2022-03-06T18:30:40.543828-06:00
+Thread 1 advanced to log sequence 17 (LGWR switch)
+  Current log# 2 seq# 17 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo02a.log
+  Current log# 2 seq# 17 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo02b.log
+  Current log# 2 seq# 17 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo02c.log
+2022-03-06T18:34:06.349697-06:00
+Memory Notification: Library Cache Object loaded into SGA
+Heap size 52584K exceeds notification threshold (51200K)
+Details in trace file /u01/app/oracle/diag/rdbms/sahlbda2/sahlbda2/trace/sahlbda2_ora_2849.trc
+2022-03-06T18:34:06.349789-06:00
+KGL object name :grant read on ku$_partition_view to public
+2022-03-06T18:34:22.089320-06:00
+Memory Notification: Library Cache Object loaded into SGA
+Heap size 51977K exceeds notification threshold (51200K)
+Details in trace file /u01/app/oracle/diag/rdbms/sahlbda2/sahlbda2/trace/sahlbda2_ora_2849.trc
+2022-03-06T18:34:22.089403-06:00
+KGL object name :grant read on ku$_subpartition_view to public
+2022-03-06T18:35:50.024055-06:00
+Thread 1 advanced to log sequence 18 (LGWR switch)
+  Current log# 3 seq# 18 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo03a.log
+  Current log# 3 seq# 18 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo03b.log
+  Current log# 3 seq# 18 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo03c.log
+2022-03-06T18:37:19.186486-06:00
+Warning: VKTM detected a forward time drift. 
+Please see the VKTM trace file for more details:
+/u01/app/oracle/diag/rdbms/sahlbda2/sahlbda2/trace/sahlbda2_vktm_2641.trc
+2022-03-06T18:37:30.252636-06:00
+Thread 1 cannot allocate new log, sequence 19
+Checkpoint not complete
+  Current log# 3 seq# 18 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo03a.log
+  Current log# 3 seq# 18 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo03b.log
+  Current log# 3 seq# 18 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo03c.log
+2022-03-06T18:37:37.942864-06:00
+Thread 1 advanced to log sequence 19 (LGWR switch)
+  Current log# 1 seq# 19 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo01a.log
+  Current log# 1 seq# 19 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo01b.log
+  Current log# 1 seq# 19 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo01c.log
+2022-03-06T18:39:20.159843-06:00
+Thread 1 cannot allocate new log, sequence 20
+Checkpoint not complete
+  Current log# 1 seq# 19 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo01a.log
+  Current log# 1 seq# 19 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo01b.log
+  Current log# 1 seq# 19 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo01c.log
+2022-03-06T18:39:23.539428-06:00
+Thread 1 advanced to log sequence 20 (LGWR switch)
+  Current log# 2 seq# 20 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo02a.log
+  Current log# 2 seq# 20 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo02b.log
+  Current log# 2 seq# 20 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo02c.log
+2022-03-06T18:40:40.998216-06:00
+Thread 1 cannot allocate new log, sequence 21
+Checkpoint not complete
+  Current log# 2 seq# 20 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo02a.log
+  Current log# 2 seq# 20 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo02b.log
+  Current log# 2 seq# 20 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo02c.log
+2022-03-06T18:40:47.189584-06:00
+Thread 1 advanced to log sequence 21 (LGWR switch)
+  Current log# 3 seq# 21 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo03a.log
+  Current log# 3 seq# 21 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo03b.log
+  Current log# 3 seq# 21 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo03c.log
+2022-03-06T18:41:39.057226-06:00
+Memory Notification: Library Cache Object loaded into SGA
+Heap size 52966K exceeds notification threshold (51200K)
+Details in trace file /u01/app/oracle/diag/rdbms/sahlbda2/sahlbda2/trace/sahlbda2_ora_2849.trc
+2022-03-06T18:41:39.057312-06:00
+KGL object name :grant read on ku$_m_view_pfh_view to public
+2022-03-06T18:41:47.097876-06:00
+Memory Notification: Library Cache Object loaded into SGA
+Heap size 52926K exceeds notification threshold (51200K)
+Details in trace file /u01/app/oracle/diag/rdbms/sahlbda2/sahlbda2/trace/sahlbda2_ora_2849.trc
+2022-03-06T18:41:47.097960-06:00
+KGL object name :grant read on ku$_zm_view_pfh_view to public
+2022-03-06T18:42:36.162885-06:00
+Memory Notification: Library Cache Object loaded into SGA
+Heap size 52922K exceeds notification threshold (51200K)
+Details in trace file /u01/app/oracle/diag/rdbms/sahlbda2/sahlbda2/trace/sahlbda2_ora_2849.trc
+2022-03-06T18:42:36.162988-06:00
+KGL object name :grant read on ku$_m_zonemap_pfh_view to public
+2022-03-06T18:43:28.316288-06:00
+Shared IO Pool defaulting to 12MB. Trying to get it from Buffer Cache for process 2849.
+2022-03-06T18:43:53.735659-06:00
+Thread 1 advanced to log sequence 22 (LGWR switch)
+  Current log# 1 seq# 22 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo01a.log
+  Current log# 1 seq# 22 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo01b.log
+  Current log# 1 seq# 22 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo01c.log
+2022-03-06T18:45:37.191966-06:00
+TABLE SYS.WRI$_OPTSTAT_HISTHEAD_HISTORY: ADDED INTERVAL PARTITION SYS_P201 (44625) VALUES LESS THAN (TO_DATE(' 2022-03-07 00:00:00', 'SYYYY-MM-DD HH24:MI:SS', 'NLS_CALENDAR=GREGORIAN'))
+2022-03-06T18:45:55.970274-06:00
+TABLE SYS.WRI$_OPTSTAT_HISTGRM_HISTORY: ADDED INTERVAL PARTITION SYS_P221 (44625) VALUES LESS THAN (TO_DATE(' 2022-03-07 00:00:00', 'SYYYY-MM-DD HH24:MI:SS', 'NLS_CALENDAR=GREGORIAN'))
+2022-03-06T18:45:58.622243-06:00
+Thread 1 advanced to log sequence 23 (LGWR switch)
+  Current log# 2 seq# 23 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo02a.log
+  Current log# 2 seq# 23 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo02b.log
+  Current log# 2 seq# 23 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo02c.log
+2022-03-06T18:46:56.885187-06:00
+Thread 1 advanced to log sequence 24 (LGWR switch)
+  Current log# 3 seq# 24 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo03a.log
+  Current log# 3 seq# 24 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo03b.log
+  Current log# 3 seq# 24 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo03c.log
+2022-03-06T18:47:20.205007-06:00
+Unable to obtain current patch information due to error: 4067, ORA-04067: not executed, package body "SYS.DBMS_QOPATCH" does not exist
+ORA-06508: PL/SQL: could not find program unit being called: "SYS.DBMS_QOPATCH"
+ORA-06512: at line 1
+
+===========================================================
+Dumping current patch information
+===========================================================
+Unable to obtain current patch information due to error: 4067
+===========================================================
+2022-03-06T18:47:23.259642-06:00
+Active Session History (ASH) performed an emergency flush. This may mean that ASH is undersized. If emergency flushes are a recurring issue, you may consider increasing ASH size by setting the value of _ASH_SIZE to a sufficiently large value. Currently, ASH size is 4194304 bytes. Both ASH size and the total number of emergency flushes since instance startup can be monitored by running the following query:
+ select total_size,awr_flush_emergency_count from v$ash_info; 
+2022-03-06T18:47:27.380630-06:00
+SERVER COMPONENT id=CATPROC: status=LOADED, version=19.3.0.0.0, timestamp=2022-03-06 18:47:27
+2022-03-06T18:47:31.534134-06:00
+ALTER SYSTEM SET db_securefile='NEVER' SCOPE=BOTH;
+2022-03-06T18:47:31.600627-06:00
+ALTER SYSTEM SET db_securefile='PREFERRED' SCOPE=BOTH;
+2022-03-06T18:47:40.043262-06:00
+Thread 1 advanced to log sequence 25 (LGWR switch)
+  Current log# 1 seq# 25 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo01a.log
+  Current log# 1 seq# 25 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo01b.log
+  Current log# 1 seq# 25 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo01c.log
+2022-03-06T18:48:08.126438-06:00
+TABLE SYS.WRP$_REPORTS: ADDED INTERVAL PARTITION SYS_P241 (4448) VALUES LESS THAN (TO_DATE(' 2022-03-07 01:00:00', 'SYYYY-MM-DD HH24:MI:SS', 'NLS_CALENDAR=GREGORIAN'))
+TABLE SYS.WRP$_REPORTS_DETAILS: ADDED INTERVAL PARTITION SYS_P242 (4448) VALUES LESS THAN (TO_DATE(' 2022-03-07 01:00:00', 'SYYYY-MM-DD HH24:MI:SS', 'NLS_CALENDAR=GREGORIAN'))
+TABLE SYS.WRP$_REPORTS_TIME_BANDS: ADDED INTERVAL PARTITION SYS_P245 (4447) VALUES LESS THAN (TO_DATE(' 2022-03-06 01:00:00', 'SYYYY-MM-DD HH24:MI:SS', 'NLS_CALENDAR=GREGORIAN'))
+2022-03-06T18:48:39.550343-06:00
+
+XDB installed.
+
+XDB initialized.
+2022-03-06T18:49:21.121523-06:00
+Thread 1 cannot allocate new log, sequence 26
+Checkpoint not complete
+  Current log# 1 seq# 25 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo01a.log
+  Current log# 1 seq# 25 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo01b.log
+  Current log# 1 seq# 25 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo01c.log
+2022-03-06T18:49:24.595291-06:00
+Thread 1 advanced to log sequence 26 (LGWR switch)
+  Current log# 2 seq# 26 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo02a.log
+  Current log# 2 seq# 26 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo02b.log
+  Current log# 2 seq# 26 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo02c.log
+2022-03-06T18:50:37.359854-06:00
+Memory Notification: Library Cache Object loaded into SGA
+Heap size 54518K exceeds notification threshold (51200K)
+Details in trace file /u01/app/oracle/diag/rdbms/sahlbda2/sahlbda2/trace/sahlbda2_ora_2849.trc
+2022-03-06T18:50:37.359970-06:00
+KGL object name :ALTER VIEW "KU$_PARTITION_VIEW" COMPILE
+2022-03-06T18:50:47.896878-06:00
+Memory Notification: Library Cache Object loaded into SGA
+Heap size 53922K exceeds notification threshold (51200K)
+Details in trace file /u01/app/oracle/diag/rdbms/sahlbda2/sahlbda2/trace/sahlbda2_ora_2849.trc
+2022-03-06T18:50:47.896965-06:00
+KGL object name :ALTER VIEW "KU$_SUBPARTITION_VIEW" COMPILE
+2022-03-06T18:51:57.893007-06:00
+Memory Notification: Library Cache Object loaded into SGA
+Heap size 55069K exceeds notification threshold (51200K)
+Details in trace file /u01/app/oracle/diag/rdbms/sahlbda2/sahlbda2/trace/sahlbda2_ora_2849.trc
+2022-03-06T18:51:57.893093-06:00
+KGL object name :ALTER VIEW "KU$_M_VIEW_PFH_VIEW" COMPILE
+2022-03-06T18:52:08.731230-06:00
+Memory Notification: Library Cache Object loaded into SGA
+Heap size 55000K exceeds notification threshold (51200K)
+Details in trace file /u01/app/oracle/diag/rdbms/sahlbda2/sahlbda2/trace/sahlbda2_ora_2849.trc
+2022-03-06T18:52:08.731385-06:00
+KGL object name :ALTER VIEW "KU$_ZM_VIEW_PFH_VIEW" COMPILE
+2022-03-06T18:52:35.155587-06:00
+Memory Notification: Library Cache Object loaded into SGA
+Heap size 52757K exceeds notification threshold (51200K)
+Details in trace file /u01/app/oracle/diag/rdbms/sahlbda2/sahlbda2/trace/sahlbda2_ora_2849.trc
+2022-03-06T18:52:35.155692-06:00
+KGL object name :ALTER VIEW "KU$_M_VIEW_PIOT_VIEW" COMPILE
+2022-03-06T18:52:43.917307-06:00
+Memory Notification: Library Cache Object loaded into SGA
+Heap size 52690K exceeds notification threshold (51200K)
+Details in trace file /u01/app/oracle/diag/rdbms/sahlbda2/sahlbda2/trace/sahlbda2_ora_2849.trc
+2022-03-06T18:52:43.917433-06:00
+KGL object name :ALTER VIEW "KU$_ZM_VIEW_PIOT_VIEW" COMPILE
+2022-03-06T18:53:01.380585-06:00
+Memory Notification: Library Cache Object loaded into SGA
+Heap size 54996K exceeds notification threshold (51200K)
+Details in trace file /u01/app/oracle/diag/rdbms/sahlbda2/sahlbda2/trace/sahlbda2_ora_2849.trc
+2022-03-06T18:53:01.380715-06:00
+KGL object name :ALTER VIEW "KU$_M_ZONEMAP_PFH_VIEW" COMPILE
+2022-03-06T18:53:20.147787-06:00
+Memory Notification: Library Cache Object loaded into SGA
+Heap size 52686K exceeds notification threshold (51200K)
+Details in trace file /u01/app/oracle/diag/rdbms/sahlbda2/sahlbda2/trace/sahlbda2_ora_2849.trc
+2022-03-06T18:53:20.147937-06:00
+KGL object name :ALTER VIEW "KU$_M_ZONEMAP_PIOT_VIEW" COMPILE
+2022-03-06T18:54:19.333825-06:00
+Thread 1 cannot allocate new log, sequence 27
+Checkpoint not complete
+  Current log# 2 seq# 26 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo02a.log
+  Current log# 2 seq# 26 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo02b.log
+  Current log# 2 seq# 26 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo02c.log
+2022-03-06T18:54:22.691359-06:00
+Thread 1 advanced to log sequence 27 (LGWR switch)
+  Current log# 3 seq# 27 mem# 0: /unam-bda/d01/app/oracle/oradata/SAHLBDA2/redo03a.log
+  Current log# 3 seq# 27 mem# 1: /unam-bda/d02/app/oracle/oradata/SAHLBDA2/redo03b.log
+  Current log# 3 seq# 27 mem# 2: /unam-bda/d03/app/oracle/oradata/SAHLBDA2/redo03c.log
+2022-03-06T18:54:54.219462-06:00
+SERVER COMPONENT id=UTLRP_BGN: timestamp=2022-03-06 18:54:54
+2022-03-06T18:59:12.196936-06:00
+SERVER COMPONENT id=UTLRP_END: timestamp=2022-03-06 18:59:12
+2022-03-06T19:18:54.580115-06:00
+JIT: pid 3247 requesting full stop
+2022-03-06T19:41:20.448547-06:00
+ERROR: Shared memory area is accessible to instance startup process
+ prior to instance startup operation.
